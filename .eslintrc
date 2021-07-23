@@ -1,0 +1,14 @@
+// 수정된 .eslint 설정
+{
+  "parser": "babel-eslint",
+  "plugins": ["react-hooks"],
+  "rules": {
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": [
+      "warn",
+      {
+        "additionalHooks": "useRecoilCallback"
+      }
+    ]
+  }
+}
